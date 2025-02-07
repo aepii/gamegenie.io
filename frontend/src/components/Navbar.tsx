@@ -12,18 +12,18 @@ const Navbar = () => {
           left="50%"
           transform="translateX(-50%)"
         >
-          <Link href={"/"}>
+          <Link href="/">
             <Button variant="ghost" fontSize={14}>
               Home
             </Button>
           </Link>
-          <Link href={"/about"}>
+          <Link href="/about">
             <Button variant="ghost" fontSize={14}>
               About
             </Button>
           </Link>
         </HStack>
-        <Link href={"/contact"}>
+        <Link href="/contact">
           <Button variant="solid" fontSize={14}>
             Contact Us
           </Button>

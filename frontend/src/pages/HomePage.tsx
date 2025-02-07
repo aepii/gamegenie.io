@@ -11,7 +11,12 @@ const HomePage = () => {
       justifyContent="center"
     >
       <VStack>
-        <Heading as="h1" fontSize="5xl" textAlign="center" filter= "drop-shadow(0 0 2em #ff0000)">
+        <Heading
+          as="h1"
+          fontSize="5xl"
+          textAlign="center"
+          filter="drop-shadow(0 0 2em #ff0000)"
+        >
           Discover Your Next Favorite Game With{" "}
           <Box
             as="span"
@@ -28,12 +33,12 @@ const HomePage = () => {
           play history.
         </Heading>
         <HStack py={8}>
-          <Link href={"/register"}>
+          <Link href="/register">
             <Button size="2xl" color="" variant="solid" fontSize={16}>
               Start Now
             </Button>
           </Link>
-          <Link href={"/about"}>
+          <Link href="/about">
             <Button size="2xl" variant="outline" fontSize={16}>
               Learn More
             </Button>

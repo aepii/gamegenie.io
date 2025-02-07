@@ -5,6 +5,7 @@ import {
   Button,
   Heading,
   VStack,
+  Link,
 } from "@chakra-ui/react";
 import { Field } from "@/components/ui/field";
 import Logo from "@/components/Logo";
@@ -12,11 +13,11 @@ import Logo from "@/components/Logo";
 const RegisterPage = () => {
   return (
     <Box py={8}>
-      <Container maxW={"4xl"}>
+      <Container maxW="4xl">
         <VStack>
-          <Logo fontSize="5xl"/>
-          <Box w={"full"} p={6} rounded={"lg"} shadow={"md"}>
-            <Heading as={"h1"} size={"3xl"} textAlign={"center"} mb={4}>
+          <Logo fontSize="5xl" />
+          <Box w="full" p={6} rounded="lg" shadow="md">
+            <Heading as="h1" size="3xl" textAlign="center" mb={4}>
               Sign Up
             </Heading>
             <VStack gap={4}>
@@ -40,7 +41,12 @@ const RegisterPage = () => {
                   name="confirm-password"
                 ></Input>
               </Field>
-              <Button w={"full"}>Sign Up</Button>
+              <Button w="full">Sign Up</Button>
+              <Link href="/start">
+                <Button variant="ghost" w="full">
+                  Coninue as Guest
+                </Button>
+              </Link>
             </VStack>
           </Box>
         </VStack>
