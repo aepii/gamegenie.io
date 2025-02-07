@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <Container h="4.5rem" mx="auto" maxW="full" boxShadow="md">
       <Flex align="center" justify="space-between" boxSize="full">
-        <Logo />
+        <Logo fontSize="3xl"/>
         <HStack
           align="center"
           position="absolute"

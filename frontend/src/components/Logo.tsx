@@ -1,9 +1,13 @@
 import { Text } from "@chakra-ui/react";
 
-const Logo = () => {
+type props = {
+  fontSize: string
+}
+
+const Logo = (props: props) => {
   return (
     <Text
-      fontSize="3xl"
+      fontSize={props.fontSize}
       fontWeight="bold"
       textTransform="uppercase"
       textAlign="center"
